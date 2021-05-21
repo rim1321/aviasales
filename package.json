@@ -1,0 +1,26 @@
+{
+  "name": "aviasales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --no-cache --open",
+    "build": "parcel build src/index.html --no-cache --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
+    "classnames": "^2.2.6",
+    "nanoid": "^3.1.22",
+    "parcel": "=2.0.0-beta.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9"
+  }
+}

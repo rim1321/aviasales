@@ -1,0 +1,43 @@
+.sort-tabs {
+  height: 50px;
+  display: flex;
+}
+
+.sort-tabs__btn {
+  flex: 1;
+  border: 1px solid #DFE5EC;
+  border-right: none;
+  background-color: #FFF;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.sort-tabs__btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.sort-tabs__btn:last-child {
+  border-right: 1px solid #DFE5EC;
+  border-radius: 0 5px 5px 0;
+}
+
+.sort-tabs__btn_active,
+.sort-tabs__btn_active:last-child {
+  background-color: #2196F3;
+  border-color: #2196F3;
+  color: #FFF;
+}
+
+.sort-tabs__btn_active + .sort-tabs__btn {
+  border-left-color: #2196F3;
+}
+
+@media (max-width: 425px) {
+  .sort-tabs__btn {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+  }
+}

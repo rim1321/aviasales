@@ -1,0 +1,70 @@
+.ticket {
+  height: 184px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.ticket__head {
+  height: 36px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket__price {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2196F3;
+}
+
+.ticket__price {
+
+}
+
+.ticket__logo-airline {
+
+}
+
+.ticket__info {
+
+}
+
+.ticket__route {
+  display: flex;
+}
+
+.ticket__route:first-child {
+  margin-bottom: 10px;
+}
+
+.ticket__route-info {
+  max-width: 140px;
+  margin-right: 20px;
+  flex-grow: 1;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+@media (max-width: 375px) {
+  .ticket__route-info {
+    font-size: 11px;
+  }
+}
+
+.ticket__route-info:last-child {
+  margin-right: 0;
+}
+
+.ticket__route-label {
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #A0B0B9;
+}
+
+.ticket__route-value {
+  line-height: 20px;
+}
