@@ -19,6 +19,7 @@ function FiltersMediator ({
 
 function _onFilterClick (id) {
   transaction(s => {
+    // масло масленное, не читается, хорошо бы отрефакторить
     const filters = s.filters
 
     if (id === 'all') {
@@ -45,7 +46,7 @@ const mapStateToProps = state => ({
 
 
 FiltersMediator.propTypes = {
-  filters: PropTypes.object.isRequired,
+  filters: PropTypes.object.isRequired, // не хватает типов
 }
 
 

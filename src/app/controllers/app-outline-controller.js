@@ -9,7 +9,7 @@ function init () {
 
 
 function fixOutline () {
-  const style = document.createElement('style')
+  const style = document.createElement('style') // почему нельзя было сделать общими стилями?
   document.head.appendChild(style)
 
   // disable outline on mouse-down

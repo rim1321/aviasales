@@ -7,7 +7,7 @@ export default fetchAllTickets
 
 async function fetchAllTickets () {
   const searchId = await fetchSearchId()
-  while (true) {
+  while (true) { // почему while (true) ?
     const page = await fetchNextTicketsPage(searchId)
     if (page.stop) {
       break

@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './serp.css'
 
-
+// что значит Serp? как переводится? 
 function Serp ({
   tickets,
   totalTicketCount,
-  onShowMoreClick,
+  onShowMoreClick, // название неудачное "событие Показать больше клик"
 }) {
   return (
     <div className='serp'>
@@ -61,7 +61,7 @@ function Serp ({
 
 
 Serp.propTypes = {
-  tickets: PropTypes.array.isRequired,
+  tickets: PropTypes.array.isRequired, // можно еще глубже расписать - т.к. используешь выше ticket
   totalTicketCount: PropTypes.number.isRequired,
   onShowMoreClick: PropTypes.func.isRequired,
 }

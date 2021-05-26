@@ -13,7 +13,7 @@ const initialState = {
 
 function rootReducer (state = initialState, action) {
   switch (action.type) {
-    case 'set-state':
+    case 'set-state': 
       return action.newState
 
     default:

@@ -15,6 +15,7 @@ export default {
 
 
 function init () {
+  // в чем идея контроллеров? откуда ты вообще о них знаешь? они были популярны 10 лет назад :-)
   storeController.init()
   devController.init()
   urlController.init()

@@ -1,5 +1,8 @@
 export default safeModify
 
+// в чем преимущество перед стандартным подходом? 
+// Читается сложно, поддерживать еще сложнее, внедрять новых разработчиков долго, еще не факт что все это написано без ошибок
+
 
 const _isProxy_ = Symbol('isProxy')
 const _isProxifiedArray_ = Symbol('isProxifiedArray')

@@ -12,7 +12,7 @@ function init () {
   applyUrlToStateOnBackNavigation()
 }
 
-
+// что будет если добавятся еще фильтры? например пагинация, поиск и тд..
 function applyUrlToState () {
   const url = new URL(location.href)
   const store = storeController.getStore()
@@ -27,6 +27,7 @@ function applyUrlToState () {
     }
   }
 
+  // чекбокс "Все" выбранный и отжатый отображает одинаковый url
   // handle filters in search params
   const filterParams = url.searchParams.get('filters')
   const filterValues = filterParams ?

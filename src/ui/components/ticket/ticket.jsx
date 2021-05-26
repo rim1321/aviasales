@@ -19,6 +19,7 @@ function Ticket ({
       </div>
       <div className="ticket__info">
         {ticketInfo.segments.map((s, i) => (
+          // индекс массива нельзя использовать для key. Почему?
           <div className="ticket__route" key={i}>
             <div className="ticket__route-info">
               <p className="ticket__route-label">{s.origin} – {s.destination}</p>
@@ -81,7 +82,7 @@ function getDurationValue (number) {
 
 
 Ticket.propTypes = {
-  ticketInfo: PropTypes.object.isRequired,
+  ticketInfo: PropTypes.object.isRequired, // хорошо бы рассписать
 }
 
 

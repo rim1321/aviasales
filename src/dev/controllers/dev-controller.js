@@ -5,7 +5,7 @@ export default {
   init,
 }
 
-
+// зачем все это? ты действительно манипулировал хранилищем из консоли?
 function init () {
   const isDev = process.env.NODE_ENV === 'development'
   if (!isDev) { return }
@@ -19,6 +19,7 @@ function init () {
     }
   }
 
+  // что здесь происходит?
   Object.defineProperty(window, 'commit', {
     get () {
       const state = storeController.getState()

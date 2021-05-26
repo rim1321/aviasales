@@ -1,6 +1,6 @@
 export default generateBemClass
 
-
+// зачем это?
 function generateBemClass (className, mods = {}) {
   const classList = [className]
   for (const modName in mods) {
